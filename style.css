@@ -1,0 +1,133 @@
+
+/** Custom Propeties **/
+/* :root {
+    
+} */
+
+/** Reset **/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /** 1REM = 10px */
+}
+*, *:before, *:after{
+  box-sizing: inherit; /**Hereda el border-box*/
+}
+
+body {
+  /* font-family: ; */
+  font-size: 1.6rem; /** Para que todas las fuentes midan lo mismo(16px) */
+  line-height: 2; /** Interlineado ente texto (separacion) */
+}
+
+/** Globals */
+
+.container{
+  max-width: 120rem;   /**Hace que nunca pase de los 120rem (1200px)*/
+  width    : 90%;     /** Yo voy a tomar 90% de lo que hay disponible*/
+  margin   : 0 auto; /*Centra en contenido*/
+}
+/* h1,h2,h3{
+  font-family: ;
+  margin: ;
+  font-weight: ;
+} */
+
+h1 {
+  font-size: 4.4rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/** Img Responsive **/
+img {
+  max-width: 100%;
+  display: block; /** Para convertir a bloque*/
+  height   : auto; /** Toma como altura su contenido, si esta configurado como border box es igual*/
+}
+
+/** Utilities **/
+.text-center{
+  text-align: center;
+}
+
+/**************  STYLES **********************/
+
+body,html{
+  margin          : 0;
+  color           : #fff;
+  background-color: #2f4f30;
+  min-width           : 100%;
+  height          : 100%;
+}
+
+.header{
+  margin: 0;
+}
+
+
+@media(max-width:360px){
+  .header{
+      width: 100%;
+  }
+}
+
+.title{
+  background-color: #000;
+  margin    : 0;
+  padding   : 1.5rem;
+  text-align: center;
+  color     : #fff;
+}
+
+@media(max-width:360px){
+  .title{
+      font-size: 3rem;
+      width: 100%;
+  }
+}
+
+.btn{
+  font-size: 1.5rem;
+  margin   : 0 .5rem 0 .5rem;
+}
+
+.carta{
+  margin     : 0;
+  position   : relative;
+  left       : 10rem;
+  width      : 15rem;
+  margin-left: -5.5rem;
+  display    : inline-block;
+  padding: 2rem 0;
+}
+
+@media(max-width:420px){
+  .carta{
+      left       : 5rem;
+      width      : 10rem;
+      margin-left: -5.5rem;
+  }     
+}
+
+#computadora-cartas,
+#jugador-cartas{
+  height : 30rem;
+}
+
+@media(max-width: 420px){
+  #computadora-cartas,
+  #jugador-cartas{
+  height : 16rem;
+}     
+}
